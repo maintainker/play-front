@@ -1,0 +1,30 @@
+#viewport_container {
+  grid-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  display: grid;
+  background: #000;
+
+  grid-template-columns: minmax(430px, 1fr) 600px minmax(302px, 1fr);
+}
+#viewport_container #viewport_center {
+  max-width: 600px;
+  position: relative;
+  width: 100%;
+}
+#viewport_container #viewport_center {
+  border: 1px solid #eee;
+  background: #fefefe;
+  margin: 0 auto;
+  color: black;
+}
+#viewport_container #viewport_left,
+#viewport_container #viewport_right {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+}

@@ -1,0 +1,21 @@
+/* 기본 링크 스타일 */
+.link {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e319d; /* 기본 링크 색상 */
+  text-decoration: none; /* 밑줄 제거 */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* 링크 hover 시 색상 변경 */
+.link:hover {
+  color: #0a2377; /* hover 시 진한 파란색 */
+}
+
+/* disabled 상태일 때 링크 색상 변경 */
+.disabled {
+  color: #ccc; /* 비활성화된 링크는 회색 */
+  cursor: not-allowed;
+  pointer-events: none; /* 클릭 방지 */
+}
